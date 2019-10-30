@@ -22,8 +22,6 @@ class StdOutListener(StreamListener):
         print (status)
 
 kafka = KafkaClient("localhost:9092")
-# producer = SimpleProducer(kafka,  batch_send_every_n=2,
-#                           batch_send_every_t=1000, async=True)
 producer = KafkaProducer(bootstrap_servers='localhost:9092')
 l = StdOutListener()
 print("no")
