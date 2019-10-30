@@ -9,6 +9,3 @@ while True:
         p.produce('test_topic', now.encode('utf-8'))
         p.flush()
         sleep(1)
-
-#p.produce('mytopic', 'Test Message')
-#p.flush()
